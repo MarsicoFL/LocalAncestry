@@ -98,11 +98,6 @@ We need some inputs for running RFmix2.
 
 4. **Genetic map**: Also we need the genetic map, that could be obtained from the following link [genetic map hg18](https://alkesgroup.broadinstitute.org/Eagle/downloads/tables/genetic_map_hg18.txt.gz). But, if it is used directly, will give an strange error: "Stop: chr is not striclty increasing". This could be repeared extracting columns 1, 3 and 4 from the genetic map and changing the number of the chromosome, for example 15, by chr15. It is already available on this link: https://drive.google.com/file/d/1_1dVIi2de8ZaH4P0j-eFj2jxAMqJAiJN/view?usp=sharing
 
-
-Note from Sandoval et al, eLife, 2023: To create three reference populations we first combined 1000 genomes with HGDP genomes (Bergström et al., 2020). We ran an unsupervised k=3 ADMIXTURE analysis (Alexander et al., 2009), from which we used the individuals with a proportion higher than 0.99 of one of the ancestries as reference populations for the RFMix analyses. For Native American ancestry (NAT): 6 Colombian, 12 Karitiana, 13 Maya, 13 Pima, 8 Surui, 2 MXL, and 19 PEL (these PEL and MXL individuals are also included in the target population). For European ancestry (EUR): 23 Basque, 12 BergamoItalian, 28 French, 15 Orcadian, 28 Sardinian, 8 Tuscan, 98 CEU, 91 GBR, 98 IBS. For Sub-Saharan African ancestry (AFR): 8 BantuKenya, 8 BantuSouthAfrica, 22 Biaka, 21 Mandenka, 13 Mbuti, 6 San, 22 Yoruba, 3 ACB, 1 ASW, 99 ESN, 102 GWD, 45 LWK, 85 MSL, 107 YRI.
-
-We can adapt this code for k=4, selected sequences are presented in https://www.internationalgenome.org/data-portal/data-collection/hgdp
-
 ## **Install RFmix**:
 Just download the repository from https://github.com/slowkoni/rfmix
 ```bash
