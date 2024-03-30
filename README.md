@@ -27,7 +27,7 @@ Firstly, for natural selection analyses, local ancestry estimation should be don
 In this case the reference selected population are: AFR reference populations YRI MSL GWD;  EUR ref population CEU TSI; AMR refrence population PEL ;   EAS reference CHB [www.internationalgenome.org]
 
 
-### QC (Silvia's code from ppt):
+### QC:
 
 ```bash
 plink --geno 0.05 # (filtered out all variants with missing call rates exceeding the provided value to be removed)
