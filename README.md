@@ -266,7 +266,7 @@ for i in {1..22}; do
         cd "chr$i"
 
         # Run rfmix for local ancestry inference
-        ./../rfmix -f "Query_chr$i.vcf.gz" -r "Reference_chr$i.vcf.gz" -m ../sample_superpopulation.map -g ../genetic_map_hg18_rfmix_modified.txt -o "local_big_chr$i" --chromosome="chr$i" --n-threads=20
+        ./../rfmix -f "Query_chr$i.vcf.gz" -r "Reference_chr$i.vcf.gz" -m ../sample_superpopulation.map -g ../genetic_map_hg18_rfmix_modified.txt -o "local_chr$i" --chromosome="chr$i" --n-threads=20
 
         # Return to the parent directory
         cd ..
