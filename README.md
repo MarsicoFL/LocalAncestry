@@ -9,19 +9,19 @@ Firstly, for natural selection analyses, local ancestry estimation should be don
 ### Pipeline:
 
 - **Local Ancestry Estimation**:
-    1. **Data Preparation** (Time estimate: 1-2 weeks):
+    1. **Data Preparation**:
         - Low-quality SNPs or individuals with low call rates are removed using [PLINK](http://zzz.bwh.harvard.edu/plink/).
           
-    2. **Reference Populations** (Time estimate: 1 week):
+    2. **Reference Populations**:
         - Identify reference populations that represent the sources of ancestry in the study population. Obtain samples from 1000 Genomes Project, The Human Genome Diversity Project, or other.
         - Reference genome: GRCh38/hg38.
         - Perform a QC on reference populations. Firstly, with unsupervised clustering (ADMIXTURE) select those individuals with more than 99% of a single component. 
           
-    3. **Phasing** (Time estimate: 1-2 weeks):
+    3. **Phasing**:
         - Phase the genotypes [SHAPEIT](https://odelaneau.github.io/shapeit4/).
         - Software: High-performance computing (HPC) environment.
           
-    4. **Local Ancestry Estimation** (Time estimate: 2-3 weeks):
+    4. **Local Ancestry Estimation**:
         - [RFMix](https://github.com/slowkoni/rfmix) to estimate local ancestry in the population. It should be done in HPC environment.
           
 In this case the reference selected population are: AFR reference populations YRI MSL GWD;  EUR ref population CEU TSI; AMR refrence population PEL ;   EAS reference CHB [www.internationalgenome.org]
