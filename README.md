@@ -13,7 +13,7 @@ Firstly, for natural selection analyses, local ancestry estimation should be don
         - Low-quality SNPs or individuals with low call rates are removed using [PLINK](http://zzz.bwh.harvard.edu/plink/).
           
     2. **Reference Populations**:
-        - Identify reference populations that represent the sources of ancestry in the study population. Obtain samples from 1000 Genomes Project, The Human Genome Diversity Project, or other.
+        - Identify reference populations that represent the sources of ancestry in the study population. Obtain samples from 1000 Genomes Project, The Human Genome Diversity Project, or other. Particularly, joint call is a very useful reference: [Data](https://gnomad.broadinstitute.org/downloads#v3-hgdp-1kg-tutorials) and [Paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9900804/)
         - Reference genome: GRCh38/hg38.
         - Perform a QC on reference populations. Firstly, with unsupervised clustering (ADMIXTURE) select those individuals with more than 99% of a single component. 
           
