@@ -130,18 +130,6 @@ It should run relatively fast (around 20 minutes in a 64gb ram, 20 cores used). 
 2. local15_PR.rfmix.Q: ancestry proportion
 3. local15_PR.sis.tsv and local15_PR.fb.tsv: other information related to specific snps ancestry.
 
-For plotting the karyogram we developed the following specific script (then we should figure out how to scale for many samples and many chromosomes). Excute the following command in the same folder where the outputs live.
-
-```python
-python plot_karyogram.py
-```
-
-Here the result. As it is shown in local15_PR.rfmix.Q, near 70% of the Puerto Rico chromosome is from CEU ancestry, and 30% ASW.
-
-
-![Captura desde 2023-10-28 13-17-37](https://github.com/SilviaBuonaiuto/PANMIX/assets/55600771/3610a3d9-ab1c-4992-922e-977c6ae8cc17)
-
-
 # Running a full analysis (1 chromosome - two source populations)
 Estimated time, 64GB RAM, 20 cores: 45 mins per chromosome 15.
 
